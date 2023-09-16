@@ -30,3 +30,20 @@
   font-size: 1.7rem;
   margin-top: 2rem;
 }
+.close{
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .close{
+    display: block;
+    position: absolute;
+    color: var(--color-red);
+    background: none;
+    font-size: 3rem;
+    font-weight: 600;
+    top: 3rem;
+  left: 3rem;
+  }
+  
+}

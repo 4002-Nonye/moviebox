@@ -48,7 +48,7 @@ function Box() {
           .filter((crewMember) => crewMember.department === "Writing")
 
           // STEP 3 - get their names
-          .map((crewMember) => crewMember.name)
+          .map((crewMember) => crewMember.name),
       );
 
       const crewWriters = [...UniquecrewWriters].join(", ");
@@ -68,9 +68,9 @@ function Box() {
       const uniqueDirectorNames = new Set(
         crew
           .filter((castMember) =>
-            popularDirector.includes(castMember.popularity)
+            popularDirector.includes(castMember.popularity),
           )
-          .map((cas) => cas.name)
+          .map((cas) => cas.name),
       );
 
       const mainDirector = [...uniqueDirectorNames].join(", ");

@@ -8,6 +8,7 @@ import movieProjector from "../../assets/Movie-projector.svg";
 import tvShow from "../../assets/TV-show.svg";
 import calendar from "../../assets/Calendar.svg";
 import logout from "../../assets/Logout.svg";
+import { useMovies } from "../../contexts/MoviesContext";
 
 const sideOptions = [
   {
@@ -29,8 +30,12 @@ const sideOptions = [
   { src: calendar, text: "Upcoming", alt: "calendar", active: false, to: "#" },
 ];
 function SideBar() {
+  const { setIsOpen } = useMovies();
   return (
     <div className={styles.sideBar}>
+      <Button btnType="close" onClick={() => setIsOpen(false)}>
+        x
+      </Button>
       <div className={styles.logo}>
         <img src={logo} alt="logo" />
       </div>

@@ -6,9 +6,10 @@
   padding: 4rem 0;
   display: flex;
   flex-direction: column;
-  
-min-height: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
+
 .logo {
   margin: 0 3rem 7rem;
 }
@@ -79,11 +80,50 @@ min-height: 100vh;
   gap: 2rem;
 }
 
-.logoutHolder{
+.logoutHolder {
   color: var(--color-grey-logout);
 }
 
-@media screen and (max-width:768px) {
- .sideBar{
-  display: none;
- }}
+@media screen and (max-width: 768px) {
+  .sideBar {
+    position: absolute;
+    z-index: 100;
+    border: 0;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    width: 40%;
+  }
+  .logo,
+  .btmInfo {
+    display: none;
+  }
+  .active {
+    border-right: none;
+    border-bottom: 0.5rem solid var(--color-red);
+  }
+  .tab {
+    margin-top: 6rem;
+  }
+  .tab a {
+    margin: 0;
+    width: unset;
+  }
+  .tab li {
+    justify-content: center;
+  }
+  .links img {
+    display: none;
+  }
+  .logoutHolder{
+    justify-content: flex-start;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sideBar {
+    width: 70%;
+  }
+}
