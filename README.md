@@ -26,8 +26,3 @@ Follow these steps to get the project up and running on your local machine:
    npm install
    ```
 
-2. **Create a New Branch:** Create a new branch in your forked repository to work on your feature or bug fix. You can do this using the following command:
-
-   ```bash
-   git checkout -b your-feature-branch
-
