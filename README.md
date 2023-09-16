@@ -6,7 +6,6 @@ This is a basic React application created using Vite.js, a fast and modern devel
 
 - [Getting Started](#getting-started)
 
-
 ## Getting Started
 
 Follow these steps to get the project up and running on your local machine:
