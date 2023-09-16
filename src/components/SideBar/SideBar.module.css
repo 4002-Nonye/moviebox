@@ -1,0 +1,91 @@
+.sideBar {
+  flex-basis: 30rem;
+  background-color: var(--color-white);
+  border-radius: 0px 45px 45px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  
+min-height: 100vh;
+}
+.logo {
+  margin: 0 3rem 7rem;
+}
+
+.tab li {
+  margin-bottom: 4rem;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.tab a {
+  width: 70%;
+  display: flex;
+  margin: 0 2rem;
+  justify-content: space-evenly;
+}
+.tab li:hover {
+  background-color: var(--bg-red);
+}
+.active {
+  background-color: var(--bg-red);
+  border-right: 0.5rem solid var(--color-red);
+}
+
+.links:link,
+.links:visited {
+  color: var(--color-grey-logout);
+  font-weight: 600;
+  font-size: 2rem;
+  height: 9rem;
+}
+.btmInfo {
+  background-color: var(--bg-grey);
+  border: 2px solid var(--border-red);
+  border-radius: 2.3rem;
+  padding: 6rem 1.4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 4rem;
+  width: 90%;
+}
+.topParagraph {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-grey-opacity);
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.btmParagraph {
+  font-weight: 500;
+  color: var(--color-grey-logout);
+  font-size: 1.7rem;
+}
+.logoutHolder,
+.links {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.logoutHolder {
+  gap: 2rem;
+}
+
+.logoutHolder{
+  color: var(--color-grey-logout);
+}
+
+@media screen and (max-width:768px) {
+  .sideBar{
+    display: none;
+  }
+  
+}

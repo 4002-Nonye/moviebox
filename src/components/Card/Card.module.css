@@ -1,0 +1,66 @@
+.card{
+    width: 30rem;
+       font-weight: 700;
+    
+    margin-bottom: 4rem;
+    cursor: pointer;
+    
+      
+
+
+}
+.fav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+   
+    backdrop-filter: blur(1px);
+    cursor: pointer;
+    border-radius: 50%;
+   width: 3rem;
+   height: 3rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+.location{
+    color: var(--color-grey);
+    font-size: 1.7rem;
+    font-weight: inherit;    margin: 1.5rem 1rem 1rem 0;
+   
+    
+
+}
+.posterImg{
+   position: relative;
+    height: 45rem;
+   
+}
+.posterImg img{
+    width: 30rem;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.title{
+    color: var(--color-navy-blue);
+    font-size: 2.3rem;
+    font-weight: inherit;
+    margin-bottom: 1rem;
+    
+
+}
+.category{
+
+    font-size: 1.5rem;
+    font-weight: inherit;
+    color: var(--color-grey);
+    margin: 1rem 0;
+}
+.releaseDate{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}

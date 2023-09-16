@@ -1,0 +1,56 @@
+.main{
+    display: flex;
+    flex-direction: column;
+  width: 90%;
+  margin: 4rem auto;
+    
+
+}
+
+.headWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+
+.head{
+    color: var(--color-black);
+    font-size: 5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: 80%;
+}
+.headLink, .headLink:link,.headLink:visited{
+    color: var(--color-red);
+     text-align: center;
+   display: flex;
+   align-items: center;
+   gap: 1.5rem;
+    
+    
+}
+.moviesWrapper{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  
+  width: 100%;
+  gap: 5rem;
+ 
+    margin-top: 3rem;
+
+}
+
+@media screen and (max-width:500px) {
+ 
+.head{
+    font-size: 3rem;
+  }
+  .headLink span{
+    display: none;
+  }
+}

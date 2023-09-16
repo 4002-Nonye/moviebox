@@ -1,0 +1,17 @@
+.container{
+            height: 100%;
+        /* padding: 2.4rem; */
+        overscroll-behavior-y: none;
+        display: flex;
+     
+        position: relative;
+        font-family: 'Poppins',sans-serif;
+        
+      
+      
+}
+
+@media screen and (max-width:768px) {
+    .container{   flex-direction: column;}
+    
+}

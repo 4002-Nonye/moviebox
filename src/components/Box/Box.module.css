@@ -1,0 +1,202 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  flex: 1;
+  position: relative;
+}
+.box {
+  background-color: var(--color-dark--2);
+  height: 100%;
+  margin-top: 2rem;
+}
+
+.heroImg {
+  position: relative;
+  display: flex;
+}
+.hero {
+  width: 100%;
+  height: 50rem;
+  border-radius: 2rem;
+  background-position: top;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.play {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  backdrop-filter: blur(2px);
+  padding: 2rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.title {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.titleDetails {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-grey-2);
+  gap: 0.9rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+  position: relative;
+}
+.dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--color-grey-2);
+}
+
+.number {
+  color: #e8e8e8;
+  font-size: 1.8rem;
+}
+.num2 {
+  color: var(--color-grey-logout);
+  font-size: 1.7rem;
+}
+.category {
+  color: var(--color-red-dull);
+  display: inline-flex;
+  gap: 1rem;
+}
+.category p {
+  border: 1px solid #f8e7eb;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.divider {
+  border: 2px solid var(--color-grey-logout);
+  height: 2.5rem;
+}
+.rating,
+.star {
+  display: inline-flex;
+  align-items: center;
+}
+.rating {
+  gap: 1rem;
+}
+
+.movieDetailWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.movieDetail {
+  width: 75%;
+}
+.movieDetailP {
+  color: var(--color-dark-2);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.castCrew {
+  font-size: 1.5rem;
+  color: var(--color-dark-2);
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.castCrew span {
+  color: var(--color-red);
+}
+.rateAward {
+  display: flex;
+  margin-top: 3rem;
+  border: 1px solid #c7c7c7;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  height: 100%;
+  cursor: pointer;
+
+  background: rgba(255, 255, 255, 0.8);
+}
+.rate {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-radius: 1rem;
+  text-align: center;
+  width: 50%;
+  padding: 1rem;
+}
+.award {
+  display: inline-flex;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .titleWrapper {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .rateAward {
+    flex-direction: column;
+    border: 0;
+    gap: 2rem;
+  }
+  .award {
+    border: 1px solid #c7c7c7;
+    border-radius: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper{
+    padding: 2rem;
+  }
+  .hero{
+    height: 40rem;
+  }
+  .movieDetailWrapper {
+    flex-direction: column;
+  }
+  .rate{
+    width: 100%;
+  }
+ 
+  .titleDetails{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .movieDetail{
+    width: 100%;
+  }
+  .dot{
+    display: none;
+  }
+  .award{padding: 1rem;
+ }
+}

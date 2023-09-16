@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 0rem 7rem;
+}
+.socialLinks,.terms{
+    display: flex;
+    gap: 5rem;
+    padding-bottom: 2rem;
+}
+.copyRight{
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .terms{
+        flex-direction: column;
+        align-items: center;
+    }
+}

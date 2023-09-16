@@ -1,0 +1,66 @@
+.btn {
+    padding: 1.5rem 1rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: inherit;
+  }
+  
+  .btnTickets {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    margin-bottom: 1rem;
+  }
+  .btnWatch {
+    color: var(--color-dark);
+    background-color: var(--bg-red);
+    border: 1px solid var(--color-red);
+  }
+  
+  .recommendMovie{
+    width: 100%;
+    margin-top: 4rem;
+    position: relative;
+  }
+  .recommendMovie img{
+    width: 100%;
+  }
+  
+  .recommendMovieText{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+  background: rgba(18, 18, 18, 0.50);
+  backdrop-filter: blur(.2rem);
+  padding: 1.5rem 1rem;
+  }
+  .recommendMovieText span{
+    color: var(--color-white-2);
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+  
+  }
+  .recommendMovieText img{
+    width: 2.5rem;
+  }
+
+  @media screen and (max-width: 600px) {
+   .ad{
+    display: flex;
+    flex-direction: column-reverse;
+
+   }
+   .recommendMovie{
+    margin-bottom: 3rem;
+   }
+   .btn{
+    margin-bottom: 2rem;
+   }
+  }
+  

@@ -1,0 +1,32 @@
+.btn {
+  font-weight: 700;
+  border: none;
+  font-size: 1.5rem;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+ 
+  border-radius: 1rem;
+  justify-content: center;
+  cursor: pointer;
+}
+.watch {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  text-transform: uppercase;
+  padding: 1rem;
+  width: 23rem;
+  margin-top: 2rem;
+}
+
+.start {
+  background-color: var(--color-light-red);
+  color: var(--color-red);
+  width: 80%;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
